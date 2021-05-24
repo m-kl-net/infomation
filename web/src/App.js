@@ -1,5 +1,5 @@
 import {RenderAfterNavermapsLoaded, NaverMap} from "react-naver-maps"
-
+import config from "./common/config.js"
 
 export default function App(props) {
 
@@ -10,7 +10,7 @@ export default function App(props) {
 
 
 <RenderAfterNavermapsLoaded
-  ncpClientId={"n7agakswot"}
+  ncpClientId={config.naverMapApi}
 >
   <NaverMap 
     mapDivId={'maps-getting-started-uncontrolled'} // default: react-naver-map
